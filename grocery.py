@@ -36,13 +36,17 @@ class Solution:
         # type str2: string
         # return: list
         # TODO: Write code below to return a list with the solution to the prompt
-        lst1 = str1.strip(' ')
-        lst2 = str2.strip(' ')
+        lst1 = str1.split(' ')
+        lst1[len(lst1) - 1] = lst1[len(lst1) -1].strip()
+        lst2 = str2.split(' ')
+        lst2[len(lst2) - 1] = lst2[len(lst2) - 1].strip()
         final_lst = []
-        for i in lst2:
-            if i not in set(final_lst) and i not in set(lst1):
+        for i in lst1:
+            if i not in final_lst and i != '':
                 final_lst.append(i)
-        final_lst.append(lst1)
+        for i in lst2:
+            if i not in final_lst and i != '':
+                final_lst.append(i)
         return final_lst
 
 def main():
