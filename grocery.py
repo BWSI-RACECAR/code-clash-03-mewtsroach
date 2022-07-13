@@ -40,9 +40,9 @@ class Solution:
         lst2 = str2.strip(' ')
         final_lst = []
         for i in lst2:
-            if i not in set(lst1):
+            if i not in set(final_lst) and i not in set(lst1):
                 final_lst.append(i)
-        final_lst = lst1 + final_lst
+        final_lst.append(lst1)
         return final_lst
 
 def main():
