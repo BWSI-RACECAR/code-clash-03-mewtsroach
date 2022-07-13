@@ -36,8 +36,8 @@ class Solution:
         # type str2: string
         # return: list
         # TODO: Write code below to return a list with the solution to the prompt
-        lst1 = str1.split(' ')
-        lst2 = str2.split(' ')
+        lst1 = str1.strip(' ')
+        lst2 = str2.strip(' ')
         final_lst = []
         for i in lst2:
             if i not in set(lst1):
