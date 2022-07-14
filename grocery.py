@@ -38,6 +38,10 @@ class Solution:
         # type str2: string
         # return: list
         # TODO: Write code below to return a list with the solution to the prompt
+        if str1 is None:
+            str1 = ''
+        if str2 is None:
+            str2 = ''
         lst1 = str1.strip(' ')
         lst1[len(lst1) - 1] = lst1[len(lst1) -1].strip()
         lst2 = str2.strip(' ')
