@@ -1,7 +1,8 @@
+"""
 Assigned
 Private comments
 Code Clash #3
-"""
+
 Copyright MIT BWSI Autonomous RACECAR Course
 MIT License
 Summer 2022
@@ -13,9 +14,9 @@ Author: Ainsley Ward
 
 Difficulty Level: 2/10
 
-Prompt: Sarah’s parents each gave her a grocery list to take with her to Trader Joes. 
-She wants to quickly combine the lists into one, getting rid of duplicate items. 
-Write a function that takes the two grocery lists (two strings) and returns the final 
+Prompt: Sarah’s parents each gave her a grocery list to take with her to Trader Joes.
+She wants to quickly combine the lists into one, getting rid of duplicate items.
+Write a function that takes the two grocery lists (two strings) and returns the final
 grocery list (a list) that does not include duplicate items.
 
 Test Cases:
@@ -29,6 +30,7 @@ Output: [apples, bananas, bread, grapes]
 Input: str1 = 'apples bananas bread bananas'; str2 = '';
 Output: [apples, bananas, bread]
 """
+
 
 class Solution:
     def my_grocery_list(self,str1,str2):
