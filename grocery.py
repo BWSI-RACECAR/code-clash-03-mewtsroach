@@ -28,8 +28,10 @@ Input: str1 = 'apples bananas bread bananas'; str2 = 'grapes';
 Output: [apples, bananas, bread, grapes]
 
 Input: str1 = 'apples bananas bread bananas'; str2 = '';
-Output: [apples, bananas, bread]
-"""
+Output: [apples, bananas, bread]"""
+
+
+
 
 
 class Solution:
@@ -42,8 +44,8 @@ class Solution:
             str1 = ''
         if str2 is None:
             str2 = ''
-        lst1 = str1.strip().strip(' ')
-        lst2 = str2.strip().strip(' ')
+        lst1 = str1.strip().split(' ')
+        lst2 = str2.strip().split(' ')
         final_lst = []
         for i in lst1:
             if i not in final_lst and i != '':
