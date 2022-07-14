@@ -42,10 +42,8 @@ class Solution:
             str1 = ''
         if str2 is None:
             str2 = ''
-        lst1 = str1.strip(' ')
-        lst1[len(lst1) - 1] = lst1[len(lst1) -1].strip()
-        lst2 = str2.strip(' ')
-        lst2[len(lst2) - 1] = lst2[len(lst2) - 1].strip()
+        lst1 = str1.strip().strip(' ')
+        lst2 = str2.strip().strip(' ')
         final_lst = []
         for i in lst1:
             if i not in final_lst and i != '':
